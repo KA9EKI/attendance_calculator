@@ -57,7 +57,13 @@ function updatingData(subject,type,present){
 
 function updateUi(subject){
   let update =document.querySelector(`#${subject} .count`);
-  update.innerHTML = `Attended: ${attendance[subject].p} / ${attendance[subject].t}`;
+  if(attendance[subject].t != 0){
+    let z = Math.round((attendance[subject].p/attendance[subject].t)*100)
+    update.innerHTML = `Attended: ${z} %`;
+  } else{
+    update.innerHTML = `Attended: 0 / 0`; 
+  }
+  
 }
 
 buttons.forEach((button) => {
