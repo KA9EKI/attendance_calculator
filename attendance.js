@@ -70,9 +70,9 @@ function updateUi(subject){
   } else{
     update.innerHTML = `
       <p>
-        Attended: ${z} %
+        Attended: 0 %
       </p>
-      <p> L / T / P: ${attendance[subject].lec} / ${attendance[subject].tut} / ${attendance[subject].prac}</p>`; 
+      <p> L / T / P: 0 / 0 / 0</p>`; 
   }
   
 }
