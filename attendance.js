@@ -72,7 +72,7 @@ function updateUi(subject){
       <p>
         Attended: 0 %
       </p>
-      <p> L / T / P: 0 / 0 / 0</p>`; 
+      <p> L/T/P: 0/0/0</p>`; 
   }
   
 }
